@@ -23,7 +23,6 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-    //HttpServletRequest request
     @PostMapping(value = "/add")
     public String addNewMessage(@RequestBody String string) {
         ObjectMapper mapper = new ObjectMapper();
